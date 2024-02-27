@@ -2,6 +2,29 @@
 
 ---
 
-<aside>
-    <a href=""><img src="/logoYoutubeMusic.svg" alt=""></a>
+<aside class="shadow-sm shadow-gray-600 h-screen fixed w-[13%] aside">
+    <div class="w-[85%] my-0 mx-auto flex flex-col">
+        <div class="flex gap-4 pt-4 justify-start items-center pl-4">
+            <i class="bi bi-list text-2xl cursor-pointer"></i>
+            <a href=""><img src="/logoYoutubeMusic.svg" alt=""></a>
+        </div>
+        <nav class="flex flex-col mt-6">
+            <a href="" class="flex gap-4 justify-start items-center text-lg font-semibold py-3 hover:bg-[#353535] pl-4 rounded-lg"><i class="bi bi-house-fill text-xl"></i> Inicio</a>
+            <a href="" class="flex gap-4 justify-start items-center text-lg font-semibold py-3 hover:bg-[#353535] pl-4 rounded-lg"><i class="bi bi-compass text-xl"></i>    Explorar</a>
+            <a href="" class="flex gap-4 justify-start items-center text-lg font-semibold py-3 hover:bg-[#353535] pl-4 rounded-lg"><i class="bi bi-file-music text-xl"></i> Mi biblioteca</a>
+        </nav>
+        <div class="w-full mt-6 divisor"></div>
+        <div class="mt-6 flex flex-col">
+            <a href="" class="text-base font-semibold py-1 hover:bg-[#353535] pl-4 rounded-lg">Música que me gusta <br> <span class="text-xs font-normal text-[#b7b2ad]"><i class="bi bi-pin-fill"></i> Generada automáticamente</span></a>
+        </div>
+    </div>
 </aside>
+
+<style>
+.divisor{
+    border-top: 1px solid rgba(255, 255, 255, .15);
+}
+.aside{
+    border-right: 1px solid rgba(255, 255, 255, .15);
+}
+</style>
