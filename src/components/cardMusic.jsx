@@ -9,7 +9,7 @@ const CardMusic = ({imgUrl,nameSong,artistName,artistsLinkYoutube}) => {
 
     return ( 
         <>
-            <div className="flex flex-col max-w-[15%] relative">
+            <div className="flex flex-col min-w-[15%] relative mb-4">
                 <div className="relative" >
                     <img src={imgUrl} alt="" className="rounded cursor-pointer" onClick={()=> setIconPlayer(!iconPlayer)}/>
                     {iconPlayer ? <i className={`bi bi-play-fill ${classNameRep}`} onClick={()=> setIconPlayer(!iconPlayer)}></i> : <i className={`bi bi-pause-fill ${classNameRep}`} onClick={()=> setIconPlayer(!iconPlayer)}></i>}
