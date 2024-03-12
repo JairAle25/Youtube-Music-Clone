@@ -6,7 +6,7 @@ import { songs } from "../constants/songs";
 <section class="mt-16">
     <h1 class="text-5xl font-bold">Recomendaciones</h1>
     <div class="flex gap-7 mt-6 overflow-x-auto scrollItem">
-        {songs.map(song => <CardMusic imgUrl={song.urlImg} nameSong={song.nameSong} artistName={song.artistName} artistsLinkYoutube={song.artistsLinkYoutube} client:load></CardMusic>)}
+        {songs.map(song => <CardMusic imgUrl={song.urlImg} nameSong={song.nameSong} artistName={song.artistName} artistsLinkYoutube={song.artistsLinkYoutube} id={song.id} client:load></CardMusic>)}
     </div>
 </section>
 
